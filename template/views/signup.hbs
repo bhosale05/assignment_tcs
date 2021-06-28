@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <link type="text/css" href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main-contain">
+        <h3>SignUp</ph3>
+            <div>
+                <form autocomplete="off" method="POST" action="/signup-user">
+                    <label>UserName : <input style="margin:10px;" type="text" name="username"
+                            placeholder="Enter username" required></label>
+                    <br>
+                    <label>Mobine : <input style="margin:10px;" type="text" name="mobile" placeholder="Enter Mobile No."
+                            required></label>
+                    <br>
+                    <label>Email : <input style="margin:10px;" type="text" name="email" placeholder="Enter Email"
+                            required></label>
+                    <br>
+                    <label>Password : <input style="margin:10px;" type="password" name="password"
+                            placeholder="Enter Password" required></label>
+                    <br>
+                    <button href="/signin" style="margin:10px;" type="signin" class="btn btn primary">SignIn</button>
+                    <button style="margin:10px;" type="signup" class="btn btn primary">SignUp</button>
+                </form>
+                {{> footer}}
+            </div>
+
+</body>
+
+</html>

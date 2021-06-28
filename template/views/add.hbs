@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <link type="text/css" href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main-contain">
+        {{> header}}
+        <h3>{{addConfig.text}}</h3>
+        <form method="POST" action="/add_device">
+            <label>{{addConfig.devicelabel}} : <input style="margin:10px;" type="text" name="device"
+                    placeholder="Enter Device name" required></label>
+            <br>
+            <label style="text-align: left;">{{addConfig.oslabel}} : <input style="margin:10px;" type="text" name="os"
+                    placeholder="Enter OS" required></label>
+            <br>
+            <label>{{addConfig.manufacturerlabel}} : <input style="margin:10px;" type="text" name="manufacturer"
+                    placeholder="Enter Manufacturer" required></label>
+            <br>
+            <button type="submit">{{addConfig.submit}}</button>
+        </form>
+        {{> footer}}
+</body>
+
+</html>

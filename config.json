@@ -1,0 +1,23 @@
+{
+    "signin" : {
+        "title" : "User SignIn"
+    },
+    "signup" : {
+        "title" : "User SignUp"
+    },
+    "devicepage" : {
+        "title" : "Device App",
+        "text" : "Use this App to Show, Add and Remove Deivce Deatils"
+    },
+    "adddevice" : {
+        "title" : "Add New Device",
+        "text" : "Please fill device detail in the form below:",
+        "devicelabel" : "Device",
+        "oslabel" : "OS",
+        "manufacturerlabel" : "Manufacturer",
+        "submit" : "Add Deivce"
+    },
+    "showalldevice" : {
+        "title" : "Show All Devices"
+    }
+}
