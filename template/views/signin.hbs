@@ -6,20 +6,24 @@
 
 <body>
     <div class="main-contain">
-        <h3>SignIn</ph3>
-            <div>
-                <form autocomplete="off" method="POST" action="/signin-user">
-                    <label>UserName : <input style="margin:10px;" type="text" name="username"
-                            placeholder="Enter username"></label>
-                    <br>
-                    <label>Password : <input style="margin:10px;" type="password" name="password"
-                            placeholder="Enter Password"></label>
-                    <br>
-                    <button style="margin:10px;" type="signin">SignIn</button>
-                    <button href="/signup" style="margin:10px;">SignUp</button>
-                </form>
-                {{> footer}}
-            </div>
+        <h1>SignIn</h1>
+        <div if="message!=''">
+            {{message}}
+        </div>
+
+        <div>
+            <form autocomplete="off" method="POST" action="/signin-user">
+                <label>UserName : <input style="margin:10px;" type="text" name="username"
+                        placeholder="Enter username"></label>
+                <br>
+                <label>Password : <input style="margin:10px;" type="password" name="password"
+                        placeholder="Enter Password"></label>
+                <br>
+                <button style="margin:10px;" type="signin">SignIn</button>
+                <button href="/signup" style="margin:10px;">SignUp</button>
+            </form>
+        </div>
+    </div>
 </body>
 
 </html>

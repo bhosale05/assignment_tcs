@@ -7,14 +7,25 @@
 <body>
     <div class="main-contain">
         {{> header}}
+
+        {{#each result}}
         <div class="card">
-            <div class="container">
-                <h4><b>John Doe</b></h4>
-                <p>Architect & Engineer</p>
+            <div class="container" id="test">
+                <label><b>{{device}}</b></label></br>
+                <label>{{os}}</label></br>
+                <label>{{manufacturer}}</label></br>
+                <label>{{lastCheckedOutBy}}</label>
+            </div>
+            <div style="margin: 5px;">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                <a style="margin:5px;" href="/remove/{{_id}}">Remove</a>
             </div>
         </div>
+        {{/each}}
     </div>
     {{> footer}}
 </body>
-
 </html>
